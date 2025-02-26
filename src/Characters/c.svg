@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000pt"
+   height="1000pt"
+   viewBox="0 0 352.77777 352.77777"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="c.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.57575436"
+     inkscape:cx="231.00129"
+     inkscape:cy="-119.84278"
+     inkscape:window-width="3838"
+     inkscape:window-height="2113"
+     inkscape:window-x="0"
+     inkscape:window-y="45"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2">
+    <sodipodi:guide
+       position="185.37579,282.66814"
+       orientation="0,-1"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-31.950149,29.760337"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="352.778,70.556003"
+       orientation="0,-1"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="166.73421,352.77776"
+       orientation="0,-1"
+       id="guide5"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="128.88723,154.63779"
+       orientation="0,-1"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="129.65679,112.79533"
+       orientation="0,-1"
+       id="guide7"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 4">
+    <g
+       id="g2"
+       transform="translate(4.7247468e-5,0.00345612)"
+       style="display:inline">
+      <rect
+         style="fill:#1a1a1a;stroke-width:1.50707"
+         id="rect11-52-6-0"
+         width="40.402172"
+         height="28.293268"
+         x="151.8797"
+         y="-140.28603"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#1a1a1a;stroke-width:1.51453"
+         id="rect11-52-6-0-0"
+         width="40.402172"
+         height="28.574106"
+         x="151.8797"
+         y="-240.46509"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#1a1a1a;stroke-width:3.26207"
+         id="rect11-6-8"
+         width="41.686871"
+         height="128.47208"
+         x="-4.7247468e-05"
+         y="111.99289" />
+      <rect
+         style="fill:#1a1a1a;stroke-width:4.41326"
+         id="rect13-1-1"
+         width="110.19299"
+         height="41.731407"
+         x="41.686707"
+         y="240.48691" />
+      <rect
+         style="fill:#1a1a1a;stroke-width:4.41093"
+         id="rect13-1-9-2"
+         width="110.19299"
+         height="41.687279"
+         x="41.686707"
+         y="70.283379" />
+    </g>
+  </g>
+</svg>
