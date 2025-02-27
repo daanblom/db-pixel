@@ -5,7 +5,10 @@ A retro inspired sans-serif font, solely created as a branding element for my pe
 
 # Current state
 
-At this time, the font only consists of the lowercase alphabet and the hyphen (-) character. 
+At this time, the font only consists of:
+ - the lowercase alphabet
+ - the uppercase alphabet
+ - hyphen (-) character. 
 
 # Using the font
 
