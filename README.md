@@ -1,6 +1,6 @@
 # db-pixel
 
-A retro inspired sans-serif font, solely created as a branding element for my personal brand.
+A retro inspired sans-serif font, Initially created for my personal brand.
 ![header](./img/header.png)
 
 # Current state
@@ -8,6 +8,7 @@ A retro inspired sans-serif font, solely created as a branding element for my pe
 At this time, the font only consists of:
  - the lowercase alphabet
  - the uppercase alphabet
+ - numbers 0-9
  - hyphen (-) character. 
 
 # Using the font
