@@ -1,4 +1,22 @@
-# 0.2.2 (02-03-)
+# 0.2.3 (13-03-2025)
+
+## New features
+
+ - updated glyphs (8 total): 
+    - comma
+    - period
+    - underscore
+    - exclamation mark
+    - question mark
+    - colon
+    - semicolon
+
+## Fixes
+
+ - updated file structure
+
+
+# 0.2.2 (02-03-2025)
 
 ## Fixes
 

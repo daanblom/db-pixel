@@ -9,7 +9,7 @@ At this time, the font only consists of:
  - the lowercase alphabet
  - the uppercase alphabet
  - numbers 0-9
- - hyphen (-) character. 
+ - 8 total glyphs so far (more are coming, see (changelog)[CHANGELOG.md] for current list). 
 
 # Using the font
 
