@@ -13,15 +13,15 @@
         }
 
         :root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --button-bg: #ffffff;
+            --bg-color: #fffdf1;
+            --text-color: #001000;
+            --button-bg: var(--bg-color);
         }
 
         [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #ffffff;
-            --button-bg: #121212;
+            --bg-color: #001000;
+            --text-color: #fffdf2;
+            --button-bg: var(--bg-color);
         }
 
         * {
@@ -94,32 +94,43 @@
     </style>
 </head>
 <body class="min-h-screen">
-    <button class="theme-toggle fixed top-4 right-4 p-3 border border-current z-50 hover:bg-current group" onclick="toggleTheme()">
-        <i data-feather="sun" class="mode-icon sun-icon hidden group-hover:text-[var(--button-bg)]"></i>
-        <i data-feather="moon" class="mode-icon moon-icon hidden group-hover:text-[var(--button-bg)]"></i>
+    <button class="theme-toggle fixed top-4 right-4 p-3 border border-current z-50 hover:bg-current group" 
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+            role="switch"
+            aria-checked="false">
+        <i data-feather="sun" class="mode-icon sun-icon hidden group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
+        <i data-feather="moon" class="mode-icon moon-icon hidden group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
     </button>
     
     <!-- Background Text Container -->
-    <div class="text-container" id="textContainer"></div>
+    <div class="text-container" id="textContainer" aria-hidden="true"></div>
 
     <!-- Centered Card -->
     <div class="relative z-10 min-h-screen flex items-center justify-center p-4">
         <div class="card bg-[var(--bg-color)] border border-current p-8 max-w-md w-full">
             <h1 class="text-3xl mb-6">db-pixel</h1>
-            <p class="mb-8 text-lg">Pretty cool font right? And it's free for you to download and use or modify however you please. Have fun and tell your designer friends about it ;)</p>
+            <p class="mb-8 text-lg">Pretty cool font right? And it's free for you to download and use and / or modify however you please. Have fun and tell your designer friends about it ;)</p>
             
             <div class="flex flex-col gap-4 mb-8">
-                <a href="fonts/db-pixel.ttf" download class="action-button flex items-center justify-center w-full py-3 px-6 border border-current text-center hover:bg-current group">
-                    <i data-feather="download" class="btn-icon group-hover:text-[var(--button-bg)]"></i>
+                <a href="fonts/db-pixel.ttf" 
+                   download 
+                   class="action-button flex items-center justify-center w-full py-3 px-6 border border-current text-center hover:bg-current group"
+                   aria-label="Download db-pixel font file">
+                    <i data-feather="download" class="btn-icon group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
                     <span class="group-hover:text-[var(--button-bg)]">Download Font</span>
                 </a>
-                <a href="https://github.com/daanblom/db-pixel" target="_blank" class="action-button flex items-center justify-center w-full py-3 px-6 border border-current text-center hover:bg-current group">
-                    <i data-feather="github" class="btn-icon group-hover:text-[var(--button-bg)]"></i>
+                <a href="https://github.com/daanblom/db-pixel" 
+                   target="_blank" 
+                   class="action-button flex items-center justify-center w-full py-3 px-6 border border-current text-center hover:bg-current group"
+                   aria-label="View project on GitHub (opens in new tab)"
+                   rel="noopener noreferrer">
+                    <i data-feather="github" class="btn-icon group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
                     <span class="group-hover:text-[var(--button-bg)]">GitHub</span>
                 </a>
             </div>
 
-            <p class="text-[10px] text-center mt-4">2025. By <a href="https://daanblom.com" class="underline">daanblom.com</a> ♥</p>
+            <p class="text-[10px] text-center mt-4">2025. By <a href="https://daanblom.com" class="underline" aria-label="Visit Daan Blom's website (opens in new tab)" target="_blank" rel="noopener noreferrer">daanblom.com</a> ♥</p>
         </div>
     </div>
 
@@ -132,13 +143,18 @@
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
 
-        // Theme toggle functionality
+        // Theme toggle functionality with persistence
         function toggleTheme() {
             const html = document.documentElement;
             const currentTheme = html.getAttribute('data-theme') || (getSystemTheme() === 'dark' ? 'dark' : 'light');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
+            
+            // Update ARIA state
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.setAttribute('aria-checked', newTheme === 'dark');
         }
 
         // Update theme icon
@@ -196,10 +212,26 @@
             });
         }
 
+        // Initialize theme from localStorage or system preference
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemTheme = getSystemTheme();
+            const theme = savedTheme || systemTheme;
+            
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+            
+            updateThemeIcon(theme);
+            
+            // Set initial ARIA state
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.setAttribute('aria-checked', theme === 'dark');
+        }
+
         // Initialize
+        initializeTheme();
         generateText();
-        const systemTheme = getSystemTheme();
-        updateThemeIcon(systemTheme);
         
         // Set up character animation interval
         setInterval(updateRandomChars, 250); // Update every 250ms
