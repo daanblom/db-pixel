@@ -4,14 +4,6 @@ A retro-inspired sans-serif font, initially created for personal branding. This 
 
 ![header](./img/header.png)
 
-## Current State
-
-At this time, the font only consists of:
-- the lowercase alphabet
-- the uppercase alphabet
-- numbers 0-9
-- 8 total glyphs so far (more are coming, see [changelog](CHANGELOG.md) for current list)
-
 ## Features
 
 ### Current Character Set
