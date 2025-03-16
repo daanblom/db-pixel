@@ -1,6 +1,6 @@
 # db-pixel
 
-A retro-inspired sans-serif font, initially created for personal branding. This font combines modern design principles with nostalgic pixel art aesthetics.
+A retro-inspired sans-serif font, initially created for personal branding. This font combines modern design with pixel art aesthetics.
 
 ![header](./img/header.png)
 
@@ -53,7 +53,7 @@ The font is available in two formats in the `Build` directory:
 ### Project Structure
 ```
 db-pixel/
-├── Build/          # Compiled font files
+├── Build/         # Compiled font files
 ├── img/           # Project images and assets
 ├── src/           # Source files
 ├── web/           # Web documentation and preview
