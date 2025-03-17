@@ -10,7 +10,7 @@ A retro-inspired sans-serif font, initially created for personal branding. This 
 - Lowercase alphabet (a-z)
 - Uppercase alphabet (A-Z)
 - Numbers (0-9)
-- Punctuation marks:
+- Punctuation marks and symbols:
   - Comma (,)
   - Period (.)
   - Underscore (_)
@@ -18,6 +18,19 @@ A retro-inspired sans-serif font, initially created for personal branding. This 
   - Question mark (?)
   - Colon (:)
   - Semicolon (;)
+  - Brackets ([ and ])
+  - Braces ({ and })
+  - Parentheses (( and ))
+  - Angle brackets (< and >)
+  - At symbol (@)
+  - Percent (%)
+  - Pound (#)
+  - Pipe symbol (|)
+  - Double quote (")
+  - Forward slash (/)
+  - Backslash (\)
+  - Hyphen (-)
+  - Tilde (~)
 
 ### File Formats
 The font is available in two formats in the `Build` directory:
