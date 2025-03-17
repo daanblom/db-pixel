@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>db-pixel</title>
+    <script src="css/tailwind"></script>
+    <script src="js/feather.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'db-pixel';
+            src: url('fonts/db-pixel.ttf') format('truetype');
+        }
+
+        :root {
+            --bg-color: #fffdf1;
+            --text-color: #001000;
+            --button-bg: var(--bg-color);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #001000;
+            --text-color: #fffdf2;
+            --button-bg: var(--bg-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'db-pixel', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            overflow: hidden;
+        }
+
+        .theme-toggle {
+            font-family: 'db-pixel', monospace;
+            background-color: var(--button-bg);
+        }
+
+        .text-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .pixel-text {
+            position: absolute;
+            color: var(--text-color);
+            letter-spacing: 0.2em;
+            width: 1em;
+            text-align: center;
+            transform: translateX(-50%);
+        }
+
+        .card {
+            font-family: 'db-pixel', monospace;
+            position: relative;
+        }
+
+        .btn-icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 1.2em;
+            height: 1.2em;
+            margin-right: 0.5em;
+        }
+
+        .mode-icon {
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        .action-button {
+            background-color: var(--button-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html:not([data-theme]) {
+                --bg-color: #121212;
+                --text-color: #ffffff;
+                --button-bg: #121212;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <button class="theme-toggle fixed top-4 right-4 p-3 border border-current z-50 hover:bg-current group" 
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+            role="switch"
+            aria-checked="false">
+        <i data-feather="sun" class="mode-icon sun-icon hidden group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
+        <i data-feather="moon" class="mode-icon moon-icon hidden group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
+    </button>
+    
+    <!-- Background Text Container -->
+    <div class="text-container" id="textContainer" aria-hidden="true"></div>
+
+    <!-- Centered Card -->
+    <div class="relative z-10 min-h-screen flex items-center justify-center p-4">
+        <div class="card bg-[var(--bg-color)] border border-current p-4 sm:p-8 max-w-[280px] sm:max-w-md w-full">
+            <h1 class="text-2xl sm:text-5xl mb-3 sm:mb-4">db-pixel</h1>
+            <p class="mb-4 sm:mb-6 text-sm sm:text-lg">Pretty cool font right? And it's free for you to download and use and / or modify however you please. Have fun and tell your designer friends about it ;)</p>
+            
+            <div class="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <a href="fonts/db-pixel.ttf" 
+                   download 
+                   class="action-button flex items-center justify-center w-full py-1.5 sm:py-2 px-3 sm:px-4 border border-current text-center hover:bg-current group text-sm sm:text-base"
+                   aria-label="Download db-pixel font file">
+                    <i data-feather="download" class="btn-icon group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
+                    <span class="group-hover:text-[var(--button-bg)]">Download Font</span>
+                </a>
+                <a href="https://github.com/daanblom/db-pixel" 
+                   target="_blank" 
+                   class="action-button flex items-center justify-center w-full py-1.5 sm:py-2 px-3 sm:px-4 border border-current text-center hover:bg-current group text-sm sm:text-base"
+                   aria-label="View project on GitHub (opens in new tab)"
+                   rel="noopener noreferrer">
+                    <i data-feather="github" class="btn-icon group-hover:text-[var(--button-bg)]" aria-hidden="true"></i>
+                    <span class="group-hover:text-[var(--button-bg)]">GitHub</span>
+                </a>
+            </div>
+
+            <p class="text-[8px] sm:text-[11px] text-center mt-2 sm:mt-4">2025. By <a href="https://daanblom.com" class="underline" aria-label="Visit Daan Blom's website (opens in new tab)" target="_blank" rel="noopener noreferrer">daanblom.com</a> ♥</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        // Check system theme preference
+        function getSystemTheme() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        // Theme toggle functionality with persistence
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme') || (getSystemTheme() === 'dark' ? 'dark' : 'light');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+            
+            // Update ARIA state
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.setAttribute('aria-checked', newTheme === 'dark');
+        }
+
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            if (theme === 'dark') {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            }
+        }
+
+        // Generate random character
+        function getRandomChar() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+            return chars[Math.floor(Math.random() * chars.length)];
+        }
+
+        // Generate text content
+        function generateText() {
+            const container = document.getElementById('textContainer');
+            container.innerHTML = '';
+            
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+            const charSize = Math.min(viewportWidth, viewportHeight) * 0.05;
+            const spacing = charSize * 1.2; // Add 20% spacing between characters
+            const cols = Math.ceil(viewportWidth / spacing);
+            const rows = Math.ceil(viewportHeight / spacing);
+            
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    const span = document.createElement('span');
+                    span.className = 'pixel-text';
+                    span.textContent = getRandomChar();
+                    span.style.fontSize = `${charSize}px`;
+                    span.style.left = `${j * spacing + spacing/2}px`;
+                    span.style.top = `${i * spacing}px`;
+                    container.appendChild(span);
+                }
+            }
+        }
+
+        // Update random characters
+        function updateRandomChars() {
+            const chars = document.querySelectorAll('.pixel-text');
+            chars.forEach(char => {
+                if (Math.random() < 0.03) { // 10% chance to change each character
+                    char.textContent = getRandomChar();
+                }
+            });
+        }
+
+        // Initialize theme from localStorage or system preference
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemTheme = getSystemTheme();
+            const theme = savedTheme || systemTheme;
+            
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+            
+            updateThemeIcon(theme);
+            
+            // Set initial ARIA state
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.setAttribute('aria-checked', theme === 'dark');
+        }
+
+        // Initialize
+        initializeTheme();
+        generateText();
+        
+        // Set up character animation interval
+        setInterval(updateRandomChars, 500); // Update every 250ms
+
+        // Responsive regeneration on resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(generateText, 250);
+        });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!document.documentElement.hasAttribute('data-theme')) {
+                const newTheme = e.matches ? 'dark' : 'light';
+                updateThemeIcon(newTheme);
+            }
+        });
+    </script>
+</body>
+</html>
