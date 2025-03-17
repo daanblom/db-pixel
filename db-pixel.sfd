@@ -38,6 +38,7 @@ HheadAscent: 0
 HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
+OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: ISO8859-1
@@ -2384,7 +2385,7 @@ SplineSet
  229.232421875 198.557617188 l 1
  114.618164062 198.557617188 l 1x7a
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: parenleft
@@ -2412,7 +2413,7 @@ SplineSet
  245.13671875 0.0009765625 l 1
  114.747070312 0.0009765625 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: parenright
@@ -2440,7 +2441,7 @@ SplineSet
  130.385742188 0.001953125 l 1
  -0.0029296875 0.001953125 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: numbersign
@@ -2473,7 +2474,7 @@ SplineSet
  795.21484375 482.619140625 l 1
  -0.0009765625 482.619140625 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: percent
@@ -2554,7 +2555,7 @@ SplineSet
  581.256835938 0.0009765625 l 1
  581.256835938 117.12109375 l 1xe20080
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: at
@@ -2607,7 +2608,7 @@ SplineSet
  99.634765625 0.001953125 l 1
  99.634765625 102.939453125 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: less
@@ -2645,7 +2646,7 @@ SplineSet
  490.874023438 602.9609375 l 1
  361.116210938 602.9609375 l 1xcf
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: bracketleft
@@ -2673,7 +2674,7 @@ SplineSet
  0.001953125 681.428710938 l 1
  0.001953125 799.995117188 l 1xe0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: braceleft
@@ -2735,7 +2736,7 @@ SplineSet
     0 0 z
   EndSpiro
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: braceright
@@ -2771,7 +2772,7 @@ SplineSet
  130.103515625 115.438476562 l 1
  130.103515625 364.71484375 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: bar
@@ -2789,7 +2790,7 @@ SplineSet
  124.618164062 -200 l 1
  -0 -200 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: asciitilde
@@ -2827,7 +2828,7 @@ SplineSet
  228.723632812 435.70703125 l 1
  228.723632812 483.083007812 l 1x5c
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: bracketright
@@ -2853,7 +2854,7 @@ SplineSet
  0 681.453125 l 1
  0 800 l 1xe0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: backslash
@@ -2886,7 +2887,7 @@ SplineSet
  343.846679688 198.5625 l 1
  229.232421875 198.5625 l 1x84
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: greater
@@ -2924,7 +2925,7 @@ SplineSet
  0 200.150390625 l 1
  129.758789062 200.150390625 l 1x9c
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 EndChars
 EndSplineFont
