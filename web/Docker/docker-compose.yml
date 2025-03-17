@@ -1,0 +1,9 @@
+services:
+    db-pixeldotclub:
+        ports:
+            - 1214:80
+        restart: unless-stopped
+        logging:
+            options:
+                max-size: 1g
+        image: db-pixeldotclub:latest
