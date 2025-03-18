@@ -58,3 +58,23 @@
     - forward slash (/)
     - backslash (\)
     - hyphen (-)
+
+# 0.2.5 (18-03-2025)
+
+## New features
+
+ - Added new glyphs (10 total):
+    - ampersand (&)
+    - division (÷)
+    - asterisk (*)
+    - euro (€)
+    - dollar ($)
+    - circumflex (^)
+    - grave (`)
+    - equal (=)
+    - plus (+)
+    - single quote (')
+
+## Fixes
+
+   - Switched from ISO 8859-1 (Latin 1) to Windows Latin (ANSI) for encoding 
