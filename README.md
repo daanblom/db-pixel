@@ -27,10 +27,20 @@ A retro-inspired sans-serif font, initially created for personal branding. This 
   - Pound (#)
   - Pipe symbol (|)
   - Double quote (")
+  - Single quote (')
   - Forward slash (/)
   - Backslash (\)
   - Hyphen (-)
   - Tilde (~)
+  - Ampersand (&)
+  - Division (÷)
+  - Asterisk (*)
+  - Euro (€)
+  - Dollar ($)
+  - Circumflex (^)
+  - Grave (`)
+  - Equal (=)
+  - Plus (+)
 
 ### File Formats
 The font is available in two formats in the `Build` directory:
@@ -39,11 +49,9 @@ The font is available in two formats in the `Build` directory:
 
 ## Installation
 
-1. Navigate to the `Build` directory
-2. Copy the desired font files (.otf or .ttf) to your system's font directory
-3. Install the font on your system
+1. Either download the zip with the latest release from [db-pixel.club](https://www.db-pixel.club/db-pixel.zip), or clone the repo and navigate to the `Build` directory.
 
-### System-specific Installation
+### System-specific Installations
 
 #### Windows
 - Right-click the font file
@@ -69,7 +77,7 @@ db-pixel/
 ├── Build/         # Compiled font files
 ├── img/           # Project images and assets
 ├── src/           # Source files
-├── web/           # Web documentation and preview
+├── web/           # Source files for website
 └── db-pixel.sfd   # FontForge source file
 ```
 
