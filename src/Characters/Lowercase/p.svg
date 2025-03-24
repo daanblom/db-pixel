@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="0.81423962"
-     inkscape:cx="221.67921"
+     inkscape:cx="221.67922"
      inkscape:cy="811.80034"
-     inkscape:window-width="2080"
-     inkscape:window-height="2053"
-     inkscape:window-x="30"
-     inkscape:window-y="75"
+     inkscape:window-width="3838"
+     inkscape:window-height="2113"
+     inkscape:window-x="0"
+     inkscape:window-y="45"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1">
     <sodipodi:guide
@@ -73,10 +73,13 @@
     <g
        id="g1"
        transform="matrix(15.538807,0,0,15.538807,2219.6632,-2067.9886)">
-      <path
-         id="rect11-2-8-0-4-2-8-3-2-8"
-         style="fill:#1a1a1a;stroke-width:0.221935"
-         d="m -140.66613,137.59732 v 2.24512 h 6.37455 v -2.24512 z m 6.37455,2.24512 v 6.91278 h 2.17356 v -6.91278 z m 0,6.91278 h -6.38143 v -6.91278 h -2.17343 v 11.40536 h 2.17343 v -2.24746 h 6.38143 z" />
+      <g
+         id="g2">
+        <path
+           id="rect11-2-8-0-4-2-8-3-2-8"
+           style="fill:#1a1a1a;stroke-width:0.265677"
+           d="m -140.23641,137.59732 v 2.68762 h 7.63094 v -2.68762 z m 7.63094,2.68762 v 8.27524 h 2.60195 v -8.27524 z m 0,8.27524 h -7.63917 v -8.27524 h -2.6018 v 13.65328 h 2.6018 v -2.69042 h 7.63917 z" />
+      </g>
     </g>
   </g>
 </svg>
