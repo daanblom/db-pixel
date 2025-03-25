@@ -1,5 +1,4 @@
-> [!TIP]
-> Website live! visit [db-pixel.club](https://db-pixel.club) 🥂
+# Website live! visit [db-pixel.club](https://db-pixel.club) 🥂
 
 # db-pixel
 
