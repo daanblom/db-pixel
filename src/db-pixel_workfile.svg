@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="3.9999998"
-     inkscape:cx="7924.2504"
-     inkscape:cy="257.25001"
-     inkscape:window-width="3778"
-     inkscape:window-height="2053"
-     inkscape:window-x="30"
-     inkscape:window-y="75"
+     inkscape:cx="1655.1251"
+     inkscape:cy="364.00002"
+     inkscape:window-width="3838"
+     inkscape:window-height="2113"
+     inkscape:window-x="0"
+     inkscape:window-y="45"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showgrid="false">
@@ -806,6 +806,36 @@
        height="1.8170782"
        x="480.1265"
        y="-71.61261"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#de8787;stroke-width:0.265421"
+       id="rect11-2-8-0-4-2-8-3-2-8-4-1-3"
+       width="2.6004255"
+       height="13.634851"
+       x="478.18201"
+       y="100.2425" />
+    <rect
+       style="fill:#de8787;stroke-width:0.217191"
+       id="rect11-2-8-0-4-2-8-3-2-8-4-1-7-7"
+       width="2.6004255"
+       height="9.1298714"
+       x="468.3125"
+       y="100.2425" />
+    <rect
+       style="fill:#de8787;stroke-width:0.335111"
+       id="rect13-4-8-38-2-8-7-9-4-9-3-8-4-3-2-4-0-1-59"
+       width="9.869503"
+       height="2.6864493"
+       x="468.3125"
+       y="-116.5638"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#de8787;stroke-width:0.299778"
+       id="rect13-4-8-38-2-8-7-9-4-9-3-8-4-3-2-4-0-1-1-2"
+       width="7.9005103"
+       height="2.6856146"
+       x="470.91293"
+       y="-112.05799"
        transform="scale(1,-1)" />
     <rect
        style="fill:#de8787;stroke-width:0.267321"
@@ -2353,6 +2383,48 @@
        cx="151.73854"
        cy="68.725517"
        r="0.0044052801" />
+    <rect
+       style="fill:#de8787;stroke-width:0.139442"
+       id="rect11-52-6-0-3-5"
+       width="2.6004255"
+       height="3.7632883"
+       x="492.64011"
+       y="-109.37077"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#de8787;stroke-width:0.209976"
+       id="rect11-6-8-7-35"
+       width="2.6831131"
+       height="8.2703362"
+       x="482.86459"
+       y="105.60606" />
+    <rect
+       style="fill:#de8787;stroke-width:0.308995"
+       id="rect13-1-1-5-62"
+       width="8.3926201"
+       height="2.6859796"
+       x="485.5477"
+       y="113.87782" />
+    <rect
+       style="fill:#de8787;stroke-width:0.283903"
+       id="rect13-1-9-2-9-9"
+       width="7.0924072"
+       height="2.6831431"
+       x="485.5477"
+       y="102.92292" />
+    <rect
+       style="fill:#de8787;stroke-width:0.296326"
+       id="rect13-7-7-12"
+       width="7.7104187"
+       height="2.6888177"
+       x="484.92969"
+       y="109.37077" />
+    <circle
+       id="path1-7"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.264583"
+       cx="491.03867"
+       cy="110.98958"
+       r="0.0044052801" />
     <text
        xml:space="preserve"
        style="font-size:26.9439px;line-height:0.95;font-family:'Clash Grotesk';-inkscape-font-specification:'Clash Grotesk';text-align:start;letter-spacing:5.24404px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.0505197"
@@ -2419,6 +2491,17 @@
        height="13.645146"
        x="1860.0591"
        y="63.341999" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:0.95;font-family:db-pixel;-inkscape-font-specification:db-pixel;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#99ff55;stroke:#000000;stroke-width:0"
+       x="403.82034"
+       y="115.22057"
+       id="text57"><tspan
+         sodipodi:role="line"
+         id="tspan57"
+         style="stroke-width:0"
+         x="403.82034"
+         y="115.22057">tyz</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
