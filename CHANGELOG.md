@@ -78,3 +78,23 @@
 ## Fixes
 
    - Switched from ISO 8859-1 (Latin 1) to Windows Latin (ANSI) for encoding 
+
+# 0.2.6 (25-03-2025)
+
+## New features
+
+ - Added official website at db-pixel.club
+ - Added direct download link for font files
+ - Added LICENSE file with open source terms
+
+## Changes
+
+ - Updated project structure and documentation
+ - Improved README with website information and download instructions
+ - Reorganized Build directory structure
+
+## Fixes
+
+ - Updated file paths in documentation
+ - Improved installation instructions
+ - Alignmen of decenders in letter y p and q
