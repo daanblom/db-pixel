@@ -51,7 +51,7 @@ The font is available in two formats in the `Build` directory:
 
 ## Installation
 
-1. Either download the zip with the latest release from [db-pixel.club](https://www.db-pixel.club/db-pixel.zip), or clone the repo and navigate to the `Build` directory.
+Either download the zip with the latest release from [db-pixel.club](https://www.db-pixel.club/db-pixel.zip), or clone the repo and navigate to the `Build` directory.
 
 ### System-specific Installations
 
