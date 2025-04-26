@@ -98,3 +98,9 @@
  - Updated file paths in documentation
  - Improved installation instructions
  - Alignmen of decenders in letter y p and q
+
+# 0.2.7 (26-04-2025)
+
+## Fixes
+
+ - Fixed pixel size lowercase p and q
