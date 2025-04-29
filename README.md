@@ -96,7 +96,16 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history and updates.
 
 ## License
 
-This font is completely free and open source. You are free to:
+This font is licensed under the SIL Open Font License (OFL) 1.1. You are free to:
 - Use it in personal and commercial projects
 - Modify and distribute it
 - Include it in other projects
+- Bundle it with software
+
+Under the following conditions:
+- The font cannot be sold by itself
+- Any derivative works must be distributed under the same license
+- The font name cannot be used in derivative works without explicit permission
+- The copyright notice and license must be included with any distribution
+
+For more details, see the [LICENCE](LICENCE) file or visit [scripts.sil.org/OFL](http://scripts.sil.org/OFL).
