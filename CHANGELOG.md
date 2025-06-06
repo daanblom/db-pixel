@@ -104,3 +104,17 @@
 ## Fixes
 
  - Fixed pixel size lowercase p and q
+
+# 0.2.8 (27-04-2025)
+
+## New features
+
+ - Added ligatures (3 total):
+    - double t (tt)
+    - fi
+    - fj
+
+## Changes
+
+ - Added new Ligatures directory in src/Characters
+ - Updated font file to support ligature substitution
