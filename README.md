@@ -1,7 +1,4 @@
 # Website live! visit [db-pixel.club](https://db-pixel.club) 🥂
-
-# db-pixel
-
 A retro-inspired sans-serif font, initially created for personal branding. This font combines modern design with pixel art aesthetics.
 
 ![header](./img/header.png)
