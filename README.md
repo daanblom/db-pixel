@@ -44,6 +44,12 @@ A retro-inspired sans-serif font, initially created for personal branding. This 
   - Equal (=)
   - Plus (+)
 
+### Ligatures
+The font includes the following ligatures:
+- tt
+- fi
+- fj
+
 ### File Formats
 The font is available in two formats in the `Build` directory:
 - OpenType Font (.otf)
